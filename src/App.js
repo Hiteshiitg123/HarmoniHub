@@ -12,7 +12,7 @@ import SearchBar from './componants/searchBar'
 function App() {
 
   const CLIENT_ID = "faedb71022624e898f63366afdd65065";
-  const REDIRECT_URI = "https://hiteshiitg123.github.io/HarmonHub/";
+  const REDIRECT_URI = "https://hiteshiitg123.github.io/HarmonHub";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
   const [token, setToken] = useState("")
