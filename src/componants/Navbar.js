@@ -12,7 +12,7 @@ export default function Navbar(props) {
 
   };
   const handleLogin = () => {
-    window.location.href = `${props.auth_endpoint}?client_id=${props.client_id}&redirect_uri=https://hiteshiitg123.github.io/HarmonHub/callback&response_type=${props.response_type}`;
+    window.location.href = `${props.auth_endpoint}?client_id=${props.client_id}&redirect_uri=${props.redirect_uri}/callback&response_type=${props.response_type}`;
   };
   const handleLogout = () => {
     props.setaccessToken("");
