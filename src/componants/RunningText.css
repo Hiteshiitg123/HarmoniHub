@@ -1,0 +1,26 @@
+/* RunningText.css */
+.running-text-container {
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .running-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 15s linear infinite; /* Adjust the animation duration as needed */
+  }
+  
+  .running-text span {
+    display: inline-block;
+    padding: 0 10px;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

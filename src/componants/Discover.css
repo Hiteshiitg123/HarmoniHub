@@ -1,0 +1,14 @@
+/* App.css */
+.app-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Create a 2-column grid */
+    gap: 12px; /* Add some gap between the cards */
+  }
+  
+  /* Styles for Card.js remain the same */
+  
