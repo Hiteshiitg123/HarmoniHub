@@ -11,6 +11,7 @@ import SearchBar from './componants/searchBar'
 
 function App() {
 
+  const CLIENT_ID = "faedb71022624e898f63366afdd65065";
   const REDIRECT_URI = "http://localhost:3000";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
@@ -71,7 +72,7 @@ function App() {
   return (
     <>
       <Navbar
-        client_id={process.env.CLIENT_ID}
+        client_id={CLIENT_ID}
         redirect_uri={REDIRECT_URI}
         auth_endpoint={AUTH_ENDPOINT}
         response_type={RESPONSE_TYPE}
