@@ -11,8 +11,8 @@ import SearchBar from './componants/searchBar'
 
 function App() {
 
-  const CLIENT_ID = "faedb71022624e898f63366afdd65065";
-  const REDIRECT_URI = "https://hiteshiitg123.github.io/HarmonyHub";
+  const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+  const REDIRECT_URI = "https://HarmonyHub.vercel.app";
   const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
   const RESPONSE_TYPE = "token";
   const [token, setToken] = useState("")
