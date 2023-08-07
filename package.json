@@ -14,7 +14,7 @@
     "web-vitals": "^2.1.4"
     
   },
-  "homepage": "https://hiteshiitg123.github.io/HarmonHub",
+  "homepage": "https://Hiteshiitg123.github.io/HarmonHub",
   "scripts": {
     "deploy": "npm run build && gh-pages -d build",
     "start": "react-scripts start",
