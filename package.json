@@ -15,7 +15,7 @@
   "homepage": "https:/harmonyhub-1.vercel.app",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "vercel --prod",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
