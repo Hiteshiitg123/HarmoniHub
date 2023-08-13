@@ -12,12 +12,12 @@ export default function Navbar(props) {
 
   };
   const handleLogin = () => {
-    window.location.href = `${props.auth_endpoint}?client_id=${props.client_id}&redirect_uri=${props.redirect_uri}/callback&response_type=${props.response_type}`;
+    window.location.href = `${props.auth_endpoint}?client_id=${props.client_id}&redirect_uri=${props.redirect_uri}&response_type=${props.response_type}`;
   };
   const handleLogout = () => {
     props.setaccessToken("");
     window.localStorage.removeItem("token");
-    window.location.href = `${props.redirect_uri}`;
+    window.location.href = `/`;
   };
   return (
     <>
@@ -64,7 +64,7 @@ export default function Navbar(props) {
             </a>
             {!props.accessToken && (
               <div>
-                <button type="button" className="btn btn-success me-3" >Sign Up</button>
+                <button type="button" className="btn btn-success me-3" href = "https://docs.google.com/forms/d/e/1FAIpQLSeQ1MIOdazv5FwcsgjnZRqge74s9c-OZTeB1qOguLI5xMt5sg/viewform?usp=sf_link" >Sign Up</button>
                 <button type="button" className="btn btn-danger me-3" onClick={handleLogin}>Login</button>
               </div>
             )}
